@@ -23,6 +23,8 @@ until choosen
     abort e.message
   end
 
+  puts 'ku ku iopta'
+
   tr_tag = page.search("//tr[starts-with(@id, 'tr_')]").to_a.sample
 
   title = tr_tag.search("a[@class = 'all']").text
